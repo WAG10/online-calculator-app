@@ -10,7 +10,8 @@ steps:
     publishWebProjects: true
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'gab-dotNetSP'
-    appType: 'webAppLinux'
-    appName: 'gab-webapp'
+    azureSubscription: 'shashi sub svc conn'
+    appType: 'webApp'
+    appName: 'ado-shashi-webapp'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    deploymentMethod: 'auto'
